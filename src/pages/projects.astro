@@ -1,0 +1,107 @@
+---
+import MainLayout from "../layouts/MainLayout.astro";
+---
+
+<MainLayout>
+    <div class="container">
+        <h1>Esta es la pagina de proyectos</h1>
+        <section class="container-section">
+            <div class="calculadora">
+                <h3>Calculadora </h3>
+                <a href="https://anxo55.github.io/Calculadora-funcional/">Enlace Calculadora Funcional</a>
+                <img src="/src/assets/Calculadora.JPG" alt="" class="foto-calculadora">
+            </div>
+
+            <div class="camisetas">
+                <h3>Camisetas deportivas</h3>
+                <a href="https://anxo55.github.io/Camisetas-deportivas/">Enlace Camisetas Deportivas</a>
+                <img src="/src/assets/Camisetas.JPG" alt="" class="foto-camisetas">
+            </div>
+
+            <div class="to-do-list">
+                <h3>To do list</h3>
+                <a href="https://anxo55.github.io/Todo-list/">Enlace To do list</a>
+                <img src="/src/assets/To-do-list.JPG" alt="" class="foto-lista">
+            </div>
+        </section>
+    </div>
+</MainLayout>
+
+
+<style>
+
+    
+    body{
+        background-color: beige;
+        font-family: Arial, sans-serif;
+    }
+
+    .container{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .container-section{
+        display: flex;gap: 150px;
+        margin: 50px;
+    }
+
+    .container-section a{
+        text-decoration: none;
+        color: chocolate;
+        cursor: pointer;
+    }
+
+    .calculadora{
+        border: 1px solid wheat;
+        border-radius: 20px;
+        background-color:wheat ;
+    }
+
+    .camisetas{
+        border: 1px solid wheat;
+        border-radius: 20px;
+        background-color: wheat;
+    }
+
+    .to-do-list{
+        border: 1px solid wheat;
+        border-radius: 20px;
+        background-color: wheat;
+    }
+
+    .calculadora:hover{
+        background-color: burlywood;
+    }
+
+    .camisetas:hover {
+        background-color: burlywood;
+    }
+
+    .to-do-list:hover {
+        background-color: burlywood;
+    }
+
+    .foto-calculadora{
+        width: 300px;
+        height: 300px;
+    }
+
+    .foto-camisetas{
+        width: 350px;
+        height: 200px;
+    }
+
+    h1{
+        text-align: center;
+        color: #333;
+    }
+
+    a{
+        font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    }
+
+</style>
+
