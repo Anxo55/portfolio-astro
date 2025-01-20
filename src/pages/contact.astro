@@ -5,13 +5,13 @@ import MainLayout from "../layouts/MainLayout.astro";
 <MainLayout>
     <h1>Aqui puedes contactar conmigo</h1>
 
-    <form action="">
-        <label for="firstName">Nombre</label>
-        <input type="text" name="firtsName" id="firstName">
-        <label for="lastName">Apellidos</label>
-        <input type="text" name="lastName" id="lastName">
+    <form action="https://formsubmit.co/anxo.campos260204@gmail.com" method="POST">
+        <label for="firstName">Nombre Completo</label>
+        <input type="text" name="Nombre Completo" id="firstName">
+        <label for="lastName">Email</label>
+        <input type="email" name="Email" id="email">
         <label for="message">Comentario</label>
-        <textarea name="message" id="message"></textarea>
+        <textarea name="Mensaje" id="message"></textarea>
         <button type="submit">Enviar</button>
     </form>
 </MainLayout>
@@ -37,11 +37,12 @@ import MainLayout from "../layouts/MainLayout.astro";
         text-align: center;
         padding: 20px;
         border: 1px solid black;
-        background-color: antiquewhite;
+        /* background-color: antiquewhite; */
         border-radius: 20px;
+        box-shadow: 5px 5px 5px gray;
         width: 100%;
         max-width: 400px;
-        margin: 0 auto;
+        margin: 50px auto;
         height: auto; 
     }
 
